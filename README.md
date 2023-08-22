@@ -1,4 +1,4 @@
-# Projects from the 'User-Generated Data Analysis' Class (JKU 2023)
+# Project from the 'User-Generated Data Analysis' Class (JKU 2023)
 
 Welcome to the repository for my assignments and projects from the 'User-Generated Data Analysis' class at JKU in 2023. In this course, I've explored various aspects of analyzing user-generated data and gained valuable insights into understanding trends and patterns in user-generated content. This repository showcases my efforts and learning throughout the semester.
 
