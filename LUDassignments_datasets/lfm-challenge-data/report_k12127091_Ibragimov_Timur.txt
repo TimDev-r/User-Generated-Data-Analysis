@@ -1,0 +1,18 @@
+Approach:
+The task involved implementing a personalized recommendation system based on user attributes such as country, age, gender, and registration date.
+The goal was to recommend the top K popular items to a user that they have never seen before, considering users from the same country, age, gender, and registration year.
+
+Algorithm:
+The algorithm used a collaborative filtering approach to generate recommendations.
+It started by calculating the global item-popularity distribution by summing the interactions across all users.
+Items seen by the target user were identified by finding the indices of non-zero elements in the interaction array corresponding to the user.
+The popularity scores of the seen items were forced to become 'unpopular' by setting their scores to zero in the item-popularity distribution.
+The users from the same country, age, gender, and registration year as the target user were filtered from the user dataset.
+For each user in the same group, the items they have seen were excluded from consideration by setting their popularity scores to zero.
+The algorithm selected the top K items with the highest popularity scores as the recommendations for the target user.
+The recommendations were returned as an array sorted in the order of descending popularity.
+
+Experiments:
+The implemented recommender system was tested using a simulated dataset with user attributes and interaction information.
+Different scenarios were considered to evaluate the performance of the recommender system, including users from different countries, age groups, genders, and registration years.
+The accuracy and effectiveness of the recommendations were measured by nDCG score.
